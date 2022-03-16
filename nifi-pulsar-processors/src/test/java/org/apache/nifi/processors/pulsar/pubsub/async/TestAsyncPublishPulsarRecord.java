@@ -134,7 +134,7 @@ public class TestAsyncPublishPulsarRecord extends TestPublishPulsarRecord {
     public void testBulkRecordSuccess() throws PulsarClientException {
         StringBuffer sb = new StringBuffer();
 
-        for (int idx = 0; idx < 98634; idx++) {
+        for (int idx = 0; idx < 500; idx++) {
             sb.append("Mary Jane, 32").append("\n");
         }
 
@@ -149,11 +149,11 @@ public class TestAsyncPublishPulsarRecord extends TestPublishPulsarRecord {
 
         MockFlowFile result = results.get(0);
         result.assertContentEquals(sb.toString());
-        result.assertAttributeEquals(PublishPulsarRecord.MSG_COUNT, "98634");
+        result.assertAttributeEquals(PublishPulsarRecord.MSG_COUNT, "500");
         result.assertAttributeEquals(PublishPulsarRecord.TOPIC_NAME, TOPIC_NAME);
 
-        verify(mockClientService.getMockTypedMessageBuilder(), times(98634)).value("\"Mary Jane\",\"32\"\n".getBytes());
-        verify(mockClientService.getMockTypedMessageBuilder(), times(98634)).sendAsync();
+        verify(mockClientService.getMockTypedMessageBuilder(), times(500)).value("\"Mary Jane\",\"32\"\n".getBytes());
+        verify(mockClientService.getMockTypedMessageBuilder(), times(500)).sendAsync();
     }
 
     @Test
