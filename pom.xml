@@ -118,7 +118,7 @@
         <module>nifi-pulsar-client-service-nar</module>
         <module>nifi-pulsar-processors</module>
         <module>nifi-pulsar-nar</module>
-        <!--      <module>docker-image</module>-->
+        <module>docker-image</module>
     </modules>
 
     <build>
@@ -132,6 +132,7 @@
                     <target>${java.version}</target>
                     <!--  <release>${java.version}</release> -->
                     <encoding>UTF-8</encoding>
+                    <showDeprecation>true</showDeprecation>
                 </configuration>
                 <dependencies>
                     <dependency>
