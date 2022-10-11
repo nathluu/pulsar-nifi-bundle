@@ -31,7 +31,7 @@
     </properties>
     
     <dependencies>
-
+     
         <dependency>
           <groupId>io.streamnative.connectors</groupId>
           <artifactId>nifi-pulsar-client-service-api</artifactId>
