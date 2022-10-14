@@ -110,13 +110,13 @@ public class PublishPulsar extends AbstractPulsarProducerProcessor<byte[]> {
     /**
      * Sends the FlowFile content using the demarcator.
      * 
-     * @param producer
+     * @param producer - Pulsar producer
      * @param context - The current ProcessContext
      * @param session - The current ProcessSession.
-     * @param flowFile
+     * @param flowFile - FlowFile
      * @param demarcatorBytes - The value used to identify unique records in the list
      * 
-     * @throws PulsarClientException
+     * @throws PulsarClientException - Pulsar client exception
      */
     private void send(Producer<byte[]> producer, ProcessContext context, ProcessSession session, FlowFile flowFile, byte[] demarcatorBytes) throws PulsarClientException {
         AtomicInteger successCounter = new AtomicInteger(0);

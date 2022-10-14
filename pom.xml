@@ -88,22 +88,25 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <!-- Dependency versions -->
 
-    	<commons-collections4.version>4.4</commons-collections4.version>
-    	<commons-compress.version>1.21</commons-compress.version>
-    	<commons-lang3.version>3.12.0</commons-lang3.version>
-    	<commons.io.version>2.4</commons.io.version>
-    	<conscrypt-openjdk.version>2.5.2</conscrypt-openjdk.version>
-    	<groovy-eclipse-batch.version>2.5.6-01</groovy-eclipse-batch.version>
-    	<grpc.version>1.41.0</grpc.version>
-    	<jackson-core.version>2.13.4</jackson-core.version>
-      <nifi.version>1.18.0</nifi.version>
-    	<protobuf3.version>3.20.0</protobuf3.version>
-    	<protoc.version>3.20.0</protoc.version>
-    	<pulsar.version>2.10.1</pulsar.version>
+        <commons-collections4.version>4.4</commons-collections4.version>
+        <commons-compress.version>1.21</commons-compress.version>
+        <commons-lang3.version>3.12.0</commons-lang3.version>
+        <commons.io.version>2.4</commons.io.version>
+        <conscrypt-openjdk.version>2.5.2</conscrypt-openjdk.version>
+        <groovy-eclipse-batch.version>2.5.6-01</groovy-eclipse-batch.version>
+        <grpc.version>1.41.0</grpc.version>
+        <jackson-core.version>2.13.4</jackson-core.version>
+        <nifi.version>1.18.0</nifi.version>
+        <protobuf3.version>3.20.0</protobuf3.version>
+        <protoc.version>3.20.0</protoc.version>
+        <junit.version>4.13.2</junit.version>
+        <mockito-core.version>3.12.4</mockito-core.version>
+        <pulsar.version>2.10.1</pulsar.version>
+        <slf4j-simple.version>1.7.36</slf4j-simple.version>
 
-    	<java.version>11</java.version>
+        <java.version>11</java.version>
 
-    	<!-- Maven plugin versions -->
+        <!-- Maven plugin versions -->
         <maven-compiler-plugin.version>3.10.1</maven-compiler-plugin.version>
         <maven-gpg-plugin.version>3.0.1</maven-gpg-plugin.version>
         <maven-javadoc-plugin.version>3.3.1</maven-javadoc-plugin.version>
