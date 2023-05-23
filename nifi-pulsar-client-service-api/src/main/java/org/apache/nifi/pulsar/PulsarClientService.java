@@ -26,8 +26,18 @@ import org.apache.pulsar.client.api.PulsarClient;
         + "based on the configuration properties defined.")
 public interface PulsarClientService extends ControllerService {
 
+    /**
+     * Puts a batch of mutations to the given table.
+     *
+     * @return PulsarClient
+     */
     public PulsarClient getPulsarClient();
 
+    /**
+     * Puts a batch of mutations to the given table.
+     *
+     * @return Broker root URL
+     */
     public String getPulsarBrokerRootURL();
     
 }
